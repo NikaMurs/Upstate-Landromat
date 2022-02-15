@@ -803,15 +803,15 @@ body{
 }
 
 .amenities-content img{
-	width: 150px;
-	height: 50px;
+	width: 100px;
+	height: 35px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .amenities-content p{
-	font-size: 16px;
+	font-size: 10px;
 	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
