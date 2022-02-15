@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+	 	$(document).ready(function(){
+	   	 $("#menu").on("click","a", function (event) {
+	      	  event.preventDefault();
+	   	     var id  = $(this).attr('href'),
+	         	   top = $(id).offset().top;
+	      	  $('body,html').animate({scrollTop: top}, 1000);
+	   	 });
+		});
+	</script>
+	<script type="text/javascript">
+	 	$(document).ready(function(){
+	   	 $("#header-button").on("click","a", function (event) {
+	      	  event.preventDefault();
+	   	     var id  = $(this).attr('href'),
+	         	   top = $(id).offset().top;
+	      	  $('body,html').animate({scrollTop: top}, 1000);
+	   	 });
+		});
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Upstate Laundromat</title>
+</head>
+<body>
+	<header class="header" id="header">
+		<img class="header-logo" src="images/upstate-laundromat-logo.png" alt="Логотип">
+		<nav class="menu" id="menu">
+			<ul class="menu-list">
+				<li class="menu-list-item"><a href="#header">Домой</a></li>
+				<li class="menu-list-item"><a href="#services">Услуги</a></li>
+				<li class="menu-list-item"><a href="#amenities">Удобства</a></li>
+				<li class="menu-list-item"><a href="#feedback">Отзывы</a></li>
+				<li class="menu-list-item"><a href="#contact">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="header-title">
+			<p>Современная и высококлассная прачечная самообслуживания</p>
+			<h1>Лучшее место для вашей стирки</h1>
+			<div class="header-button" id="header-button"><img src="svg/map-icon.svg" class="map-icon"> <a href="#contact">Контакты</a></div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="services" id="services">
+			<div class="services-content">
+				<div class="services-content-post">
+					<img src="images/self-serve-icon.png" alt="Стиральная машина" class="services-content-image">
+					<h2>Оплата наличными и картой</h2>
+					<p>Наши экологически безопасные машины Huebsch потребляют меньше воды и быстрее сохнут, поэтому вы быстро закончите работу! Вы можете расплачиваться наличными, картой лояльности Upstate Laundromat, Visa или MasterCard.</p>
+				</div>
+				<div class="services-content-post">
+					<img src="images/folded-shirt-icon.png" alt="Удобная стирка" class="services-content-image">
+					<h2>Услуга удобной стирки</h2>
+					<p>Не тратьте драгоценное время на стирку. Позвольте нам забрать грязные вещи у вас! Работаем 7 дней в неделю, заберем в день заказа. Мы позвоним вам, когда стирка будет окончена</p>
+				</div>
+				<div class="services-content-post">
+					<img src="images/loyalty-card-icon.png" alt="Карта лояльности" class="services-content-image">
+					<h2>Карта лояльности</h2>
+					<p>Используйте свою личную карту лояльности Upstate Laundromat, чтобы со временем получать специальные скидки. Обязательно зарегистрируйте свою карту, загрузив мобильное приложение Fascard.</p>
+				</div>
+			</div>
+		</div>
+		<div class="amenities" id="amenities">
+			<div class="amenities-title">
+				<h2>Наша миссия — изменить опыт прачечной самообслуживания</h2>
+				<p>Вот что мы предлагаем:</p>
+			</div>
+			<div class="amenities-posts">
+				<div class="amenities-content">
+					<img src="images/wifi-icon.png" alt="wi-fi">
+					<p>Бесплатный wifi</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/snowflake-icon.png" alt="кондионер">
+					<p>Кондионер</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/chair-icon.png" alt="Кресла">
+					<p>Удобные кресла</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/cafe-table-icon.png" alt="Стол">
+					<p>Столик для кофе</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/hdtv-icon.png" alt="Телевизор">
+					<p>5 телевизоров</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/washing-machine-icon.png" alt="Машинка">
+					<p>30 машинок</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/ipad-icon.png" alt="ipad">
+					<p>Детская зона с iPad</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/attendant-icon.png" alt="Консультант">
+					<p>Консультант</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/security-camera-icon.png" alt="Камеры">
+					<p>Скрытые камеры</p>
+				</div>
+				<div class="amenities-content">
+					<img src="images/charger-icon.png" alt="Зарядка">
+					<p>Зарядные станции</p>
+				</div>
+			</div>
+		</div>
+		<div class="feedback" id="feedback">
+			<div class="feedback-title">
+				<h2>Отзывы наших клиентов</h2>
+			</div>
+			<div class="feedback-content">
+				<div class="feedback-name">
+					<h3>Михаил Киров</h3>
+					<div class="feedback-star">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+					</div>
+					<img src="svg/yandex.svg" alt="Яндекс" class="feedback-logo">
+				</div>
+				<div class="feedback-date">
+					<p>4 января 2022</p>
+				</div>
+				<div class="feedback-text">
+					<p>Быстро и дешево</p>
+				</div>
+			</div>	
+			<div class="feedback-content">
+				<div class="feedback-name">
+					<h3>Настя Софилова</h3>
+					<div class="feedback-star">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+					</div>
+					<img src="svg/yandex.svg" alt="Яндекс" class="feedback-logo">
+				</div>
+				<div class="feedback-date">
+					<p>12 января 2022</p>
+				</div>
+				<div class="feedback-text">
+					<p>Мне нравится это место, я так рада, что поехала сюда со своей семьей.</p>
+				</div>
+			</div>	
+			<div class="feedback-content">
+				<div class="feedback-name">
+					<h3>Алексей Гурин</h3>
+					<div class="feedback-star">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+					</div>
+					<img src="svg/google.svg" alt="Google" class="feedback-logo">
+				</div>
+				<div class="feedback-date">
+					<p>23 января 2022</p>
+				</div>
+				<div class="feedback-text">
+					<p>Мне понравлось.</p>
+				</div>
+			</div>
+			<div class="feedback-content">
+				<div class="feedback-name">
+					<h3>Мария Порел</h3>
+					<div class="feedback-star">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+						<img src="svg/star.svg" alt="">
+					</div>
+					<img src="svg/google.svg" alt="Google" class="feedback-logo">
+				</div>
+				<div class="feedback-date">
+					<p>3 февраля 2022</p>
+				</div>
+				<div class="feedback-text">
+					<p>Все постирала за час, очень быстро и качественно. Приду сюда еще</p>
+				</div>
+			</div>
+		</div>
+		<div class="contact" id="contact">
+			<div class="contact-text">
+				<h2>Контакты</h2>
+				<div class="contact-text-info">
+					<div class="contact-text-info-icon">
+						<img src="svg/map-icon.svg">
+						<h3>Адрес</h3>
+					</div>
+					<p>ТРЦ Мега Дыбенко</p>
+				</div>
+				<div class="contact-text-info">
+					<div class="contact-text-info-icon">
+						<img src="svg/clock-icon.svg">
+						<h3>Время работы</h3>
+					</div>
+					<p>Каждый день с 10 утра до 10 вечера</p>
+				</div>
+				<div class="contact-text-info">
+					<div class="contact-text-info-icon">
+						<img src="svg/phone-icon.svg">
+						<h3>Телефон поддержки</h3>
+					</div>
+					<a href="tel: +78005555555" class="phone">+7 (800) 555-55-55</a>
+				</div>
+			</div>
+			<div class="contact-map">
+				<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/mega/1019030627/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Мега</a><a href="https://yandex.ru/maps/10174/saint-petersburg-and-leningrad-oblast/category/shopping_mall/184108083/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Торговый центр в Санкт‑Петербурге и Ленинградской области</a><a href="https://yandex.ru/maps/10174/saint-petersburg-and-leningrad-oblast/category/entertainment_center/184106372/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Развлекательный центр в Санкт‑Петербурге и Ленинградской области</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU5J8W60C" width="100%" height="600" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+			</div>
+			
+		</div>
+	</main>
+</body>
+</html>
